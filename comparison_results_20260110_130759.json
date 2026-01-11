@@ -1,0 +1,440 @@
+{
+  "2% white milk": {
+    "walmart": [
+      {
+        "name": "Farmers Partly Skimmed 2% Milk 1L, 1 L",
+        "price": 2.67,
+        "unit_price": null,
+        "quantity": "1L",
+        "available": true
+      },
+      {
+        "name": "Natrel Lactose Free 2%, 2 L",
+        "price": 6.98,
+        "unit_price": null,
+        "quantity": "2 L",
+        "available": true
+      },
+      {
+        "name": "Scotsburn 2% Chocolate Partly Skimmed Milk, 1L",
+        "price": 3.38,
+        "unit_price": null,
+        "quantity": "1L",
+        "available": true
+      },
+      {
+        "name": "Scotsburn 3.25% Homogenized Milk, 2L",
+        "price": 4.57,
+        "unit_price": null,
+        "quantity": "2L",
+        "available": true
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 2L",
+        "price": 4.57,
+        "unit_price": null,
+        "quantity": "2L",
+        "available": true
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 1L",
+        "price": 2.84,
+        "unit_price": null,
+        "quantity": "1L",
+        "available": true
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 4L",
+        "price": 6.94,
+        "unit_price": null,
+        "quantity": "4L",
+        "available": true
+      },
+      {
+        "name": "Farmers Partly Skimmed 2% Milk, 2 L Jug",
+        "price": 4.43,
+        "unit_price": null,
+        "quantity": "2 L",
+        "available": true
+      },
+      {
+        "name": "Farmers Skim 0% Milk, 2 L",
+        "price": 4.45,
+        "unit_price": null,
+        "quantity": "2 L",
+        "available": true
+      },
+      {
+        "name": "Farmers Partly Skimmed 2% Milk, 4 L Bag",
+        "price": 6.94,
+        "unit_price": null,
+        "quantity": "4 L",
+        "available": true
+      }
+    ],
+    "superstore": [
+      {
+        "name": "NIDO 1+ Toddler Nutritional Supplement",
+        "price": 24.99,
+        "unit_price": null,
+        "quantity": "850 g, $2.94/100g $1.33/1lb",
+        "available": true
+      },
+      {
+        "name": "2% Milk",
+        "price": 6.25,
+        "unit_price": null,
+        "quantity": "4 l, $0.16/100ml",
+        "available": true
+      },
+      {
+        "name": "2% Organic Milk",
+        "price": 7.69,
+        "unit_price": null,
+        "quantity": "2 l, $0.38/100ml",
+        "available": true
+      },
+      {
+        "name": "3.25% Organic Milk",
+        "price": 7.69,
+        "unit_price": null,
+        "quantity": "2 l, $0.38/100ml",
+        "available": true
+      },
+      {
+        "name": "2% Microfiltered Milk",
+        "price": 6.88,
+        "unit_price": null,
+        "quantity": "4 l, $0.17/100ml",
+        "available": true
+      },
+      {
+        "name": "Almond Breeze Unsweetened Almond Milk, Original",
+        "price": 3.29,
+        "unit_price": null,
+        "quantity": "1.89 l, $0.17/100ml",
+        "available": true
+      },
+      {
+        "name": "2% Milk",
+        "price": 5.32,
+        "unit_price": null,
+        "quantity": "2 l, $0.27/100ml",
+        "available": true
+      },
+      {
+        "name": "Almond Breeze, Unsweetened Vanilla",
+        "price": 3.49,
+        "unit_price": null,
+        "quantity": "946 ml, $0.37/100ml",
+        "available": true
+      },
+      {
+        "name": "2% Microfiltered Milk",
+        "price": 5.69,
+        "unit_price": null,
+        "quantity": "2 l, $0.28/100ml",
+        "available": true
+      },
+      {
+        "name": "Almond Breeze, Unsweetened Vanilla",
+        "price": 5.79,
+        "unit_price": null,
+        "quantity": "1.89 l, $0.31/100ml",
+        "available": true
+      }
+    ]
+  },
+  "large eggs": {
+    "walmart": [
+      {
+        "name": "Burnbrae Farms EGGS2go! Omega 3 Hard Boiled 6-Pack Pouch, 6 medium eggs (264g)",
+        "price": 5.78,
+        "unit_price": null,
+        "quantity": "2g",
+        "available": true
+      },
+      {
+        "name": "Burnbrae Farms Naturegg Simply Egg Whites™, 1 Kg",
+        "price": 9.47,
+        "unit_price": null,
+        "quantity": "1 Kg",
+        "available": true
+      },
+      {
+        "name": "Naturegg Simply Egg Whites™ Free Run Burnbrae Farms, 500g",
+        "price": 5.47,
+        "unit_price": null,
+        "quantity": "500g",
+        "available": true
+      },
+      {
+        "name": "Great Value Large Eggs, 12 Count",
+        "price": 4.97,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true
+      },
+      {
+        "name": "Great Value XL White Eggs, 12 Count",
+        "price": 5.67,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true
+      },
+      {
+        "name": "Nova Large White Eggs, 18 Count",
+        "price": 7.38,
+        "unit_price": null,
+        "quantity": "18 Count",
+        "available": true
+      },
+      {
+        "name": "Great Value Omega-3 Large White Eggs, 12 count",
+        "price": 7.03,
+        "unit_price": null,
+        "quantity": "3 L",
+        "available": true
+      },
+      {
+        "name": "Vaidha 6-Pack Large 15cm Opening Easter Eggs | Fillable Plastic Easter Eggs for Egg Hunts & Party Favors | White Easter Basket Stuffers for Kids & School Events",
+        "price": 11.54,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Large Clear Easter Eggs Plastic Fillable Large Easter Eggs Plastic Fillable Clear Easter Eggs Easter Eggs Shaped Gift Box Empty Shells Decorative Supplies Toy Gift Storage",
+        "price": 24.79,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Sentmoon Easter Eggs Bulk Large Plastic Eggs 6Pcs Easter Eggs Hanging Decoration Creativeness Broken Eggs Easter Eggs Easter Decorations Scene Arrangement",
+        "price": 8.99,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      }
+    ],
+    "superstore": [
+      {
+        "name": "Large Grade A Eggs",
+        "price": 3.99,
+        "unit_price": null,
+        "quantity": "12 ea, $0.33/1ea",
+        "available": true
+      },
+      {
+        "name": "Grade A Extra Large Eggs",
+        "price": 4.69,
+        "unit_price": null,
+        "quantity": "12 ea, $0.39/1ea",
+        "available": true
+      },
+      {
+        "name": "Premium Large Eggs",
+        "price": 7.24,
+        "unit_price": null,
+        "quantity": "18 ea, $0.40/1ea",
+        "available": true
+      },
+      {
+        "name": "Free Run Brown Eggs Large",
+        "price": 7.15,
+        "unit_price": null,
+        "quantity": "12 ea, $0.60/1ea",
+        "available": true
+      },
+      {
+        "name": "Free-Range Large Brown Eggs, Club Pack (30 Count)",
+        "price": 16.84,
+        "unit_price": null,
+        "quantity": "30 ea, $0.56/1ea",
+        "available": true
+      },
+      {
+        "name": "Nature's Best White Eggs, Large",
+        "price": 6.21,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true
+      },
+      {
+        "name": "Free Range Large Brown Eggs",
+        "price": 7.99,
+        "unit_price": null,
+        "quantity": "12 ea, $0.67/1ea",
+        "available": true
+      },
+      {
+        "name": "Golden D White Eggs, Large",
+        "price": 8.99,
+        "unit_price": null,
+        "quantity": "18 ea, $0.50/1ea",
+        "available": true
+      },
+      {
+        "name": "Brown Eggs Free Run Omega-3 Size: Large",
+        "price": 10.49,
+        "unit_price": null,
+        "quantity": "18 ea, $0.58/1ea",
+        "available": true
+      },
+      {
+        "name": "Naturegg NestlaidOmega 3 Large Size 12 Eggs",
+        "price": 6.69,
+        "unit_price": null,
+        "quantity": "12 ea, $6.69/1ea",
+        "available": true
+      }
+    ]
+  },
+  "sliced turkey breast": {
+    "walmart": [
+      {
+        "name": "Olymel Sliced Mock Chicken Meat Loaf, 2 x 250 g, 500 g total",
+        "price": 5.97,
+        "unit_price": null,
+        "quantity": "250 g",
+        "available": true
+      },
+      {
+        "name": "Maple Leaf Natural Selections Sliced Deli Turkey Breast Oven Roasted, 175 g",
+        "price": 7.98,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true
+      },
+      {
+        "name": "Maple Leaf Natural Selections Shaved Deli Turkey Breast Oven Roasted Family Size, 375 g",
+        "price": 11.97,
+        "unit_price": null,
+        "quantity": "375 g",
+        "available": true
+      },
+      {
+        "name": "Piller's Smoked Turkey Breast, 2 x 175g",
+        "price": 8.97,
+        "unit_price": null,
+        "quantity": "175g",
+        "available": true
+      },
+      {
+        "name": "Your Fresh Market Oven Roasted Herbed Turkey Breast, 175 g",
+        "price": 3.77,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true
+      },
+      {
+        "name": "Your Fresh Market Naturally Oven Roasted Turkey Breast, 175 g",
+        "price": 6.78,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true
+      },
+      {
+        "name": "Your Fresh Market Smoked Turkey Breast, 175 g",
+        "price": 3.77,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true
+      },
+      {
+        "name": "Maple Leaf Natural Selections Shaved Deli Turkey Breast Hickory Smoked, 175 g",
+        "price": 7.98,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true
+      },
+      {
+        "name": "Piller’s Black Forest Ham, Cooked Chicken Breast & Oven Roasted Turkey Breast, 3 x 200 g",
+        "price": 12.97,
+        "unit_price": null,
+        "quantity": "200 g",
+        "available": true
+      },
+      {
+        "name": "Your Fresh Market Oven Roasted Turkey Breast (Value Size), 2 x 300 g",
+        "price": 11.58,
+        "unit_price": null,
+        "quantity": "300 g",
+        "available": true
+      }
+    ],
+    "superstore": [
+      {
+        "name": "Turkey Snacksticks Sausage Snacks",
+        "price": 10.99,
+        "unit_price": null,
+        "quantity": "1 ea, $10.99/1ea",
+        "available": true
+      },
+      {
+        "name": "Natural Selections Sliced Deli Turkey Breast, Oven Roasted",
+        "price": 7.99,
+        "unit_price": null,
+        "quantity": "175 g, $45.66/1kg $4.57/100g",
+        "available": true
+      },
+      {
+        "name": "Oven-Roasted Turkey Breast (Thin Sliced)",
+        "price": 4.29,
+        "unit_price": null,
+        "quantity": "$42.90/1kg $19.46/1lb",
+        "available": true
+      },
+      {
+        "name": "Oven Roasted Turkey Slices",
+        "price": 3.5,
+        "unit_price": null,
+        "quantity": "175 g, $2.00/100g",
+        "available": true
+      },
+      {
+        "name": "Natural Selections Shaved Turkey Breast, Oven Roasted, Family Size.",
+        "price": 14.49,
+        "unit_price": null,
+        "quantity": "375 g, $38.64/1kg $3.86/100g",
+        "available": true
+      },
+      {
+        "name": "Smoked Turkey Breast Slices Club Pack",
+        "price": 7.94,
+        "unit_price": null,
+        "quantity": "600 g, $1.32/100g",
+        "available": true
+      },
+      {
+        "name": "Natural Selections Shaved Deli Turkey Breast, Hickory Smoked",
+        "price": 7.99,
+        "unit_price": null,
+        "quantity": "175 g, $45.66/1kg $4.57/100g",
+        "available": true
+      },
+      {
+        "name": "Smoked Turkey Breast Slices",
+        "price": 3.5,
+        "unit_price": null,
+        "quantity": "175 g, $2.00/100g",
+        "available": true
+      },
+      {
+        "name": "Extra Lean Smoked Turkey, Fixed Weight",
+        "price": 5.0,
+        "unit_price": null,
+        "quantity": "200 g, $2.50/100g",
+        "available": true
+      },
+      {
+        "name": "Free From Oven Roasted Turkey ",
+        "price": 4.0,
+        "unit_price": null,
+        "quantity": "$40.00/1kg $18.15/1lb",
+        "available": true
+      }
+    ]
+  }
+}

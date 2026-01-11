@@ -1,0 +1,159 @@
+{
+  "2% white milk": {
+    "walmart": [
+      {
+        "name": "Milk 2 Go Milk WHITE 2% Bottle Extended Shelf Life 200 ML/6.7 oz (24/Case)",
+        "price": 38.99,
+        "unit_price": null,
+        "quantity": "2 G",
+        "available": true
+      }
+    ],
+    "superstore": []
+  },
+  "large eggs": {
+    "walmart": [
+      {
+        "name": "Great Value Large Eggs, 12 Count",
+        "price": 4.97,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true
+      },
+      {
+        "name": "Nova Large Brown Eggs, 12 Count",
+        "price": 5.68,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true
+      },
+      {
+        "name": "Nova Eggs Free Run Large Eggs, 12 Count",
+        "price": 6.52,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true
+      },
+      {
+        "name": "Great Value Omega-3 Large White Eggs, 12 count",
+        "price": 7.03,
+        "unit_price": null,
+        "quantity": "3 L",
+        "available": true
+      },
+      {
+        "name": "Nova Large White Eggs, 18 Count",
+        "price": 7.38,
+        "unit_price": null,
+        "quantity": "18 Count",
+        "available": true
+      }
+    ],
+    "superstore": [
+      {
+        "name": "White Eggs, Large",
+        "price": 3.0,
+        "unit_price": null,
+        "quantity": "6 ea, $0.50/1ea",
+        "available": true
+      },
+      {
+        "name": "Large Grade A Eggs",
+        "price": 3.99,
+        "unit_price": null,
+        "quantity": "12 ea, $0.33/1ea",
+        "available": true
+      },
+      {
+        "name": "Grade A Extra Large Eggs",
+        "price": 4.69,
+        "unit_price": null,
+        "quantity": "12 ea, $0.39/1ea",
+        "available": true
+      },
+      {
+        "name": "Grade A Premium White Eggs, Large",
+        "price": 5.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.43/1ea",
+        "available": true
+      },
+      {
+        "name": "Grade A Eggs, Super Extra-Large",
+        "price": 5.69,
+        "unit_price": null,
+        "quantity": "12 ea, $0.47/1ea",
+        "available": true
+      },
+      {
+        "name": "Naturegg Nest Laid White Eggs, Large",
+        "price": 6.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true
+      },
+      {
+        "name": "Grade A Brown Eggs, Large",
+        "price": 6.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true
+      },
+      {
+        "name": "Grade A Brown Eggs, Extra Large",
+        "price": 6.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true
+      },
+      {
+        "name": "Nature's Best White Eggs, Large",
+        "price": 6.21,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true
+      },
+      {
+        "name": "Green Valley Omega 3 Eggs, Large",
+        "price": 6.49,
+        "unit_price": null,
+        "quantity": "12 ea, $6.49/1ea",
+        "available": true
+      }
+    ]
+  },
+  "sliced turkey breast": {
+    "walmart": [
+      {
+        "name": "Maple Leaf Natural Selections Sliced Deli Turkey Breast Oven Roasted, 175 g",
+        "price": 7.98,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true
+      }
+    ],
+    "superstore": [
+      {
+        "name": "Oven-Roasted Turkey Breast (Thin Sliced)",
+        "price": 4.29,
+        "unit_price": null,
+        "quantity": "$42.90/1kg $19.46/1lb",
+        "available": true
+      },
+      {
+        "name": "Turkey Breast, Honey Maple (Thin Sliced)",
+        "price": 4.29,
+        "unit_price": null,
+        "quantity": "$42.90/1kg $19.46/1lb",
+        "available": true
+      },
+      {
+        "name": "Natural Selections Sliced Deli Turkey Breast, Oven Roasted",
+        "price": 7.99,
+        "unit_price": null,
+        "quantity": "175 g, $45.66/1kg $4.57/100g",
+        "available": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,865 @@
+{
+  "2% white milk": {
+    "walmart": [
+      {
+        "name": "Farmers Partly Skimmed 2% Milk 1L, 1 L",
+        "price": 2.67,
+        "unit_price": null,
+        "quantity": "1L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.67,
+            "per": "1.0l",
+            "normalized_amount": 0.0027,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.27/100ml"
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 1L",
+        "price": 2.84,
+        "unit_price": null,
+        "quantity": "1L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.84,
+            "per": "1.0l",
+            "normalized_amount": 0.0028,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.28/100ml"
+      },
+      {
+        "name": "Scotsburn 2% Chocolate Partly Skimmed Milk, 1L",
+        "price": 3.38,
+        "unit_price": null,
+        "quantity": "1L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 3.38,
+            "per": "1.0l",
+            "normalized_amount": 0.0034,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.34/100ml"
+      },
+      {
+        "name": "Farmers Partly Skimmed 2% Milk, 2 L Jug",
+        "price": 4.43,
+        "unit_price": null,
+        "quantity": "2 L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.215,
+            "per": "2.0l",
+            "normalized_amount": 0.0022,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.22/100ml"
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 2L",
+        "price": 4.43,
+        "unit_price": null,
+        "quantity": "2L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.215,
+            "per": "2.0l",
+            "normalized_amount": 0.0022,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.22/100ml"
+      },
+      {
+        "name": "Farmers Partly Skimmed 2% Milk, 2 L",
+        "price": 4.45,
+        "unit_price": null,
+        "quantity": "2 L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.225,
+            "per": "2.0l",
+            "normalized_amount": 0.0022,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.22/100ml"
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 2L",
+        "price": 4.57,
+        "unit_price": null,
+        "quantity": "2L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.285,
+            "per": "2.0l",
+            "normalized_amount": 0.0023,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.23/100ml"
+      },
+      {
+        "name": "Milk2Go 2% Partly Skimmed Milk, 6 x 200 mL",
+        "price": 6.68,
+        "unit_price": null,
+        "quantity": "2G",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 3.34,
+            "per": "2.0g",
+            "normalized_amount": 3.34,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$334.00/100ml"
+      },
+      {
+        "name": "Scotsburn 2% Partly Skimmed Milk, 4L",
+        "price": 6.94,
+        "unit_price": null,
+        "quantity": "4L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 1.735,
+            "per": "4.0l",
+            "normalized_amount": 0.0017,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.17/100ml"
+      },
+      {
+        "name": "Farmers Partly Skimmed 2% Milk, 4 L Jug",
+        "price": 6.94,
+        "unit_price": null,
+        "quantity": "4 L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 1.735,
+            "per": "4.0l",
+            "normalized_amount": 0.0017,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.17/100ml"
+      }
+    ],
+    "superstore": [
+      {
+        "name": "2% Milk",
+        "price": 2.03,
+        "unit_price": null,
+        "quantity": "237 ml, $0.86/100ml",
+        "available": true,
+        "unit_price_display": "$0.01/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0086,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Milk",
+        "price": 2.63,
+        "unit_price": null,
+        "quantity": "473 ml, $0.56/100ml",
+        "available": true,
+        "unit_price_display": "$0.01/ml",
+        "unit_prices": [
+          {
+            "amount": 0.005600000000000001,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Evaporated Partly Skimmed Milk",
+        "price": 2.79,
+        "unit_price": null,
+        "quantity": "354 ml, $0.79/100ml",
+        "available": true,
+        "unit_price_display": "$0.01/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0079,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Milk",
+        "price": 3.58,
+        "unit_price": null,
+        "quantity": "1 l, $0.36/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0036,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Microfiltered Milk",
+        "price": 3.68,
+        "unit_price": null,
+        "quantity": "1 l, $0.37/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0037,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Ultrafiltered Partly Skimmed Milk",
+        "price": 4.25,
+        "unit_price": null,
+        "quantity": "1 l, $0.43/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0043,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Organic 2% Milk",
+        "price": 4.49,
+        "unit_price": null,
+        "quantity": "1 l, $0.45/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0045000000000000005,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Lactose Free Milk",
+        "price": 4.59,
+        "unit_price": null,
+        "quantity": "1 l, $0.46/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0046,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "2% Milk",
+        "price": 5.32,
+        "unit_price": null,
+        "quantity": "2 l, $0.27/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0027,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Goat Milk, 2% M.F",
+        "price": 5.49,
+        "unit_price": null,
+        "quantity": "1 l, $0.55/100ml",
+        "available": true,
+        "unit_price_display": "$0.01/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0055000000000000005,
+            "per": "ml"
+          }
+        ]
+      }
+    ]
+  },
+  "large eggs": {
+    "walmart": [
+      {
+        "name": "Great Value Large Eggs, 12 Count",
+        "price": 4.97,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.4142,
+            "per": "12.0count",
+            "normalized_amount": 0.4142,
+            "normalized_per": "1count",
+            "base_unit": "count"
+          }
+        ],
+        "unit_price_display": "$0.41/1ea"
+      },
+      {
+        "name": "Nova Large Brown Eggs, 12 Count",
+        "price": 5.68,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.4733,
+            "per": "12.0count",
+            "normalized_amount": 0.4733,
+            "normalized_per": "1count",
+            "base_unit": "count"
+          }
+        ],
+        "unit_price_display": "$0.47/1ea"
+      },
+      {
+        "name": "Nova Eggs Free Run Large Eggs, 12 Count",
+        "price": 6.52,
+        "unit_price": null,
+        "quantity": "12 Count",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.5433,
+            "per": "12.0count",
+            "normalized_amount": 0.5433,
+            "normalized_per": "1count",
+            "base_unit": "count"
+          }
+        ],
+        "unit_price_display": "$0.54/1ea"
+      },
+      {
+        "name": "Great Value Omega-3 Large White Eggs, 12 count",
+        "price": 7.03,
+        "unit_price": null,
+        "quantity": "3 L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 2.3433,
+            "per": "3.0l",
+            "normalized_amount": 0.0023,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.00/1ea"
+      },
+      {
+        "name": "Nova Large White Eggs, 18 Count",
+        "price": 7.38,
+        "unit_price": null,
+        "quantity": "18 Count",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.41,
+            "per": "18.0count",
+            "normalized_amount": 0.41,
+            "normalized_per": "1count",
+            "base_unit": "count"
+          }
+        ],
+        "unit_price_display": "$0.41/1ea"
+      }
+    ],
+    "superstore": [
+      {
+        "name": "White Eggs, Large",
+        "price": 3.0,
+        "unit_price": null,
+        "quantity": "6 ea, $0.50/1ea",
+        "available": true,
+        "unit_price_display": "$0.50/ea",
+        "unit_prices": [
+          {
+            "amount": 0.5,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Large Grade A Eggs",
+        "price": 3.99,
+        "unit_price": null,
+        "quantity": "12 ea, $0.33/1ea",
+        "available": true,
+        "unit_price_display": "$0.33/ea",
+        "unit_prices": [
+          {
+            "amount": 0.33,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Grade A Extra Large Eggs",
+        "price": 4.69,
+        "unit_price": null,
+        "quantity": "12 ea, $0.39/1ea",
+        "available": true,
+        "unit_price_display": "$0.39/ea",
+        "unit_prices": [
+          {
+            "amount": 0.39,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Grade A Premium White Eggs, Large",
+        "price": 5.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.43/1ea",
+        "available": true,
+        "unit_price_display": "$0.43/ea",
+        "unit_prices": [
+          {
+            "amount": 0.43,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Grade A Eggs, Super Extra-Large",
+        "price": 5.69,
+        "unit_price": null,
+        "quantity": "12 ea, $0.47/1ea",
+        "available": true,
+        "unit_price_display": "$0.47/ea",
+        "unit_prices": [
+          {
+            "amount": 0.47,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Naturegg Nest Laid White Eggs, Large",
+        "price": 6.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true,
+        "unit_price_display": "$0.52/ea",
+        "unit_prices": [
+          {
+            "amount": 0.52,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Grade A Brown Eggs, Large",
+        "price": 6.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true,
+        "unit_price_display": "$0.52/ea",
+        "unit_prices": [
+          {
+            "amount": 0.52,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Grade A Brown Eggs, Extra Large",
+        "price": 6.19,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true,
+        "unit_price_display": "$0.52/ea",
+        "unit_prices": [
+          {
+            "amount": 0.52,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Nature's Best White Eggs, Large",
+        "price": 6.21,
+        "unit_price": null,
+        "quantity": "12 ea, $0.52/1ea",
+        "available": true,
+        "unit_price_display": "$0.52/ea",
+        "unit_prices": [
+          {
+            "amount": 0.52,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Green Valley Omega 3 Eggs, Large",
+        "price": 6.49,
+        "unit_price": null,
+        "quantity": "12 ea, $6.49/1ea",
+        "available": true,
+        "unit_price_display": "$6.49/ea",
+        "unit_prices": [
+          {
+            "amount": 6.49,
+            "per": "ea"
+          }
+        ]
+      }
+    ]
+  },
+  "sliced turkey breast": {
+    "walmart": [
+      {
+        "name": "Your Fresh Market Oven Roasted Herbed Turkey Breast, 175 g",
+        "price": 3.77,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0215,
+            "per": "175.0g",
+            "normalized_amount": 0.0215,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$2.15/100g"
+      },
+      {
+        "name": "Your Fresh Market Smoked Turkey Breast, 175 g",
+        "price": 3.77,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0215,
+            "per": "175.0g",
+            "normalized_amount": 0.0215,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$2.15/100g"
+      },
+      {
+        "name": "Your Fresh Market Cooked Turkey Breast, 175 g",
+        "price": 3.77,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0215,
+            "per": "175.0g",
+            "normalized_amount": 0.0215,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$2.15/100g"
+      },
+      {
+        "name": "Piller’s Smoked Turkey Breast Slices, 125 g",
+        "price": 4.17,
+        "unit_price": null,
+        "quantity": "125 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0334,
+            "per": "125.0g",
+            "normalized_amount": 0.0334,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$3.34/100g"
+      },
+      {
+        "name": "Schneiders Hardwood Smoked Turkey Breast Snack Kit, 75 g",
+        "price": 4.47,
+        "unit_price": null,
+        "quantity": "75 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0596,
+            "per": "75.0g",
+            "normalized_amount": 0.0596,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$5.96/100g"
+      },
+      {
+        "name": "Deli Express Smoked Turkey Breast, 200 g",
+        "price": 4.97,
+        "unit_price": null,
+        "quantity": "200 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0248,
+            "per": "200.0g",
+            "normalized_amount": 0.0248,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$2.48/100g"
+      },
+      {
+        "name": "Deli Express Cooked & Seasoned Turkey Breast, 200 g",
+        "price": 4.97,
+        "unit_price": null,
+        "quantity": "200 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0248,
+            "per": "200.0g",
+            "normalized_amount": 0.0248,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$2.48/100g"
+      },
+      {
+        "name": "Solmaz Halal Smoked Montreal Style Turkey Breast, 175gr",
+        "price": 4.98,
+        "unit_price": null,
+        "quantity": "175g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0285,
+            "per": "175.0g",
+            "normalized_amount": 0.0285,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$2.85/100g"
+      },
+      {
+        "name": "Deli Express Value Size Cooked & Seasoned Turkey Breast, 500 g",
+        "price": 5,
+        "unit_price": null,
+        "quantity": "500 g",
+        "available": false,
+        "unit_prices": [
+          {
+            "amount": 0.01,
+            "per": "500.0g",
+            "normalized_amount": 0.01,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$1.00/100g"
+      },
+      {
+        "name": "Your Fresh Market Naturally Oven Roasted Turkey Breast, 175 g",
+        "price": 6.78,
+        "unit_price": null,
+        "quantity": "175 g",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0387,
+            "per": "175.0g",
+            "normalized_amount": 0.0387,
+            "normalized_per": "1g",
+            "base_unit": "g"
+          }
+        ],
+        "unit_price_display": "$3.87/100g"
+      }
+    ],
+    "superstore": [
+      {
+        "name": "Turkey, Sliced",
+        "price": 2.5,
+        "unit_price": null,
+        "quantity": "55 g, $45.45/1kg $4.55/100g",
+        "available": true,
+        "unit_price_display": "$45.45/kg",
+        "unit_prices": [
+          {
+            "amount": 45.45,
+            "per": "kg"
+          }
+        ]
+      },
+      {
+        "name": "Hardwood Smoked Turkey Breast Snack Kit",
+        "price": 2.99,
+        "unit_price": null,
+        "quantity": "75 g, $3.99/100g",
+        "available": true,
+        "unit_price_display": "$0.04/g",
+        "unit_prices": [
+          {
+            "amount": 0.039900000000000005,
+            "per": "g"
+          }
+        ]
+      },
+      {
+        "name": "Smoked Turkey Breast Slices",
+        "price": 3.5,
+        "unit_price": null,
+        "quantity": "175 g, $2.00/100g",
+        "available": true,
+        "unit_price_display": "$0.02/g",
+        "unit_prices": [
+          {
+            "amount": 0.02,
+            "per": "g"
+          }
+        ]
+      },
+      {
+        "name": "Cooked Turkey Breast Slices",
+        "price": 3.5,
+        "unit_price": null,
+        "quantity": "175 g, $2.00/100g",
+        "available": true,
+        "unit_price_display": "$0.02/g",
+        "unit_prices": [
+          {
+            "amount": 0.02,
+            "per": "g"
+          }
+        ]
+      },
+      {
+        "name": "Small Batch Cajun Turkey Breast",
+        "price": 4.0,
+        "unit_price": null,
+        "quantity": "$40.00/1kg $18.15/1lb",
+        "available": true,
+        "unit_price_display": "$40.00/kg",
+        "unit_prices": [
+          {
+            "amount": 40.0,
+            "per": "kg"
+          }
+        ]
+      },
+      {
+        "name": "Delicatessen Originals Turkey Breast",
+        "price": 4.0,
+        "unit_price": null,
+        "quantity": "175 g, $2.29/100g",
+        "available": true,
+        "unit_price_display": "$0.02/g",
+        "unit_prices": [
+          {
+            "amount": 0.0229,
+            "per": "g"
+          }
+        ]
+      },
+      {
+        "name": "Oven-Roasted Turkey Breast (Thin Sliced)",
+        "price": 4.29,
+        "unit_price": null,
+        "quantity": "$42.90/1kg $19.46/1lb",
+        "available": true,
+        "unit_price_display": "$42.90/kg",
+        "unit_prices": [
+          {
+            "amount": 42.9,
+            "per": "kg"
+          }
+        ]
+      },
+      {
+        "name": "Turkey Breast, Honey Maple (Thin Sliced)",
+        "price": 4.29,
+        "unit_price": null,
+        "quantity": "$42.90/1kg $19.46/1lb",
+        "available": true,
+        "unit_price_display": "$42.90/kg",
+        "unit_prices": [
+          {
+            "amount": 42.9,
+            "per": "kg"
+          }
+        ]
+      },
+      {
+        "name": "Tomato and Basil Oven Roasted Turkey Breast",
+        "price": 4.29,
+        "unit_price": null,
+        "quantity": "$42.90/1kg $19.46/1lb",
+        "available": true,
+        "unit_price_display": "$42.90/kg",
+        "unit_prices": [
+          {
+            "amount": 42.9,
+            "per": "kg"
+          }
+        ]
+      },
+      {
+        "name": "Extra Lean Cooked Turkey (Thin Sliced) Fixed Weight",
+        "price": 5.0,
+        "unit_price": null,
+        "quantity": "200 g, $2.50/100g",
+        "available": true,
+        "unit_price_display": "$0.03/g",
+        "unit_prices": [
+          {
+            "amount": 0.025,
+            "per": "g"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "status": "success",
+  "items_searched": [
+    "milk",
+    "bread",
+    "eggs"
+  ],
+  "comparisons": [
+    {
+      "search_term": "milk",
+      "walmart": {
+        "results": [],
+        "count": 0,
+        "available_count": 0,
+        "min_price": null,
+        "max_price": null,
+        "avg_price": null
+      },
+      "superstore": {
+        "results": [],
+        "count": 0,
+        "available_count": 0,
+        "min_price": null,
+        "max_price": null,
+        "avg_price": null
+      },
+      "best_deal": null
+    },
+    {
+      "search_term": "bread",
+      "walmart": {
+        "results": [],
+        "count": 0,
+        "available_count": 0,
+        "min_price": null,
+        "max_price": null,
+        "avg_price": null
+      },
+      "superstore": {
+        "results": [],
+        "count": 0,
+        "available_count": 0,
+        "min_price": null,
+        "max_price": null,
+        "avg_price": null
+      },
+      "best_deal": null
+    },
+    {
+      "search_term": "eggs",
+      "walmart": {
+        "results": [],
+        "count": 0,
+        "available_count": 0,
+        "min_price": null,
+        "max_price": null,
+        "avg_price": null
+      },
+      "superstore": {
+        "results": [],
+        "count": 0,
+        "available_count": 0,
+        "min_price": null,
+        "max_price": null,
+        "avg_price": null
+      },
+      "best_deal": null
+    }
+  ]
+}
