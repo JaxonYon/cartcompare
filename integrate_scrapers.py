@@ -16,9 +16,9 @@ from superstore import scrape_superstore
 
 # Products to search for
 PRODUCTS_TO_SEARCH = [
-    "2% white milk",
-    "large eggs",
-    "sliced turkey breast"
+    "Orange Juice",
+    "Toilet Paper",
+    "Lemons"
 ]
 
 
@@ -243,6 +243,60 @@ def _filter_and_rank(query: str, items: List[Dict[str, Any]], limit: int = 10) -
     return enriched
 
 
+def _find_cheapest_option(product_name: str, stores_dict: Dict[str, List[Dict[str, Any]]]) -> Optional[Dict[str, Any]]:
+    """
+    Find the cheapest option across all stores for a product.
+    Prioritizes unit price comparison when available, falls back to total price.
+    
+    Returns:
+        {"store": "Walmart", "item": {...}} or None if no valid items
+    """
+    all_items = []
+    
+    # Collect all items from all stores with store labels
+    for store_name, items in stores_dict.items():
+        for item in items:
+            if item.get("price") is not None:  # Only consider items with prices
+                all_items.append({
+                    "store": store_name,
+                    "item": item
+                })
+    
+    if not all_items:
+        return None
+    
+    # Try to find cheapest by normalized unit price first (fairest comparison)
+    items_with_normalized = []
+    for entry in all_items:
+        unit_prices = entry["item"].get("unit_prices", [])
+        if unit_prices and isinstance(unit_prices, list) and len(unit_prices) > 0:
+            normalized = unit_prices[0].get("normalized_amount")
+            if normalized is not None:
+                items_with_normalized.append({
+                    "store": entry["store"],
+                    "item": entry["item"],
+                    "normalized_price": normalized
+                })
+    
+    # If we have items with normalized unit prices, use those for comparison
+    if items_with_normalized:
+        # Prefer available items, then by normalized unit price
+        items_with_normalized.sort(key=lambda x: (
+            not x["item"].get("available", False),  # Available items first
+            x["normalized_price"]
+        ))
+        best = items_with_normalized[0]
+        return {"store": best["store"], "item": best["item"], "comparison_type": "unit_price"}
+    
+    # Fall back to total price comparison
+    all_items.sort(key=lambda x: (
+        not x["item"].get("available", False),  # Available items first
+        x["item"].get("price", float('inf'))
+    ))
+    
+    return {"store": all_items[0]["store"], "item": all_items[0]["item"], "comparison_type": "total_price"}
+
+
 async def search_all_products() -> Dict[str, Dict[str, List[Dict[str, Any]]]]:
     """
     Search for all products across both stores.
@@ -332,6 +386,35 @@ def print_comparison(results: Dict[str, Dict[str, List[Dict[str, Any]]]]) -> Non
                 
                 print(f"  {idx}. {name}")
                 print(f"     Price: {price_str}{unit_str}{qty_str} | Available: {available}")
+        
+        # Show best deal for this product
+        print(f"\n{'═'*100}")
+        best_deal = _find_cheapest_option(product, stores)
+        if best_deal:
+            store = best_deal["store"].upper()
+            item = best_deal["item"]
+            comp_type = best_deal.get("comparison_type", "total_price")
+            
+            name = item.get("name", "Unknown")
+            price = item.get("price", "N/A")
+            unit_price_display = item.get("unit_price_display", "N/A")
+            quantity = item.get("quantity", "N/A")
+            available = "✓" if item.get("available") else "✗"
+            
+            if isinstance(price, (int, float)):
+                price_str = f"${price:.2f}"
+            else:
+                price_str = str(price)
+            
+            unit_str = f" | Unit: {unit_price_display}" if unit_price_display and unit_price_display != "N/A" else ""
+            qty_str = f" | Qty: {quantity}" if quantity and quantity != "N/A" else ""
+            
+            comparison_note = " (by unit price)" if comp_type == "unit_price" else " (by total price)"
+            print(f"🏆 BEST DEAL{comparison_note}: {store} - \"{name}\"")
+            print(f"   Price: {price_str}{unit_str}{qty_str} | Available: {available}")
+        else:
+            print(f"🏆 BEST DEAL: No items with valid prices found")
+        print(f"{'═'*100}")
         
         print()
 

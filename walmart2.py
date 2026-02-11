@@ -3,18 +3,23 @@ import asyncio
 import random
 import traceback
 import time
+import os
+from pathlib import Path
+from datetime import datetime, timedelta
 from playwright.async_api import async_playwright
 
-# IMPORTANT: Run 'pip install playwright-stealth' before running this.
-# v2.0.0+ exports just 'stealth' which works for both sync and async.
-try:
-    from playwright_stealth import stealth_async
-except ImportError:
-    try:
-        from playwright_stealth import stealth as stealth_async  # v2.0.0+ API
-    except ImportError:
-        print("Please install playwright-stealth: pip install playwright-stealth")
-        stealth_async = None
+# REBROWSER-PLAYWRIGHT: This project uses rebrowser-playwright instead of regular playwright.
+# It's a drop-in replacement that patches 30+ browser automation detection vectors.
+# Installation: pip install rebrowser-playwright==1.52.0
+# Then run: playwright install chromium --with-deps
+# Documentation: https://rebrowser.net/docs/patches-for-puppeteer-and-playwright
+# The patches are applied automatically at the binary level - no code changes needed!
+
+# Rate limiting configuration
+LAST_REQUEST_TIME = None
+MIN_REQUEST_INTERVAL = 45  # Minimum seconds between requests
+SESSION_DIR = Path(__file__).parent / ".walmart_sessions"
+SESSION_DIR.mkdir(exist_ok=True)
 
 
 async def _safe_close(context=None, browser=None):
@@ -27,13 +32,74 @@ async def _safe_close(context=None, browser=None):
             pass
 
 
-# Rotate between multiple realistic user agents
+async def _check_rate_limit():
+    """Enforce rate limiting between requests."""
+    global LAST_REQUEST_TIME
+    if LAST_REQUEST_TIME:
+        elapsed = time.time() - LAST_REQUEST_TIME
+        if elapsed < MIN_REQUEST_INTERVAL:
+            wait_time = MIN_REQUEST_INTERVAL - elapsed + random.uniform(5, 15)
+            print(f"Rate limiting: waiting {wait_time:.1f}s before next request...")
+            await asyncio.sleep(wait_time)
+    LAST_REQUEST_TIME = time.time()
+
+
+async def _simulate_human_behavior(page):
+    """Simulate realistic human browsing behavior."""
+    # Random scrolling
+    scroll_amount = random.randint(200, 800)
+    await page.evaluate(f"window.scrollBy(0, {scroll_amount})")
+    await asyncio.sleep(random.uniform(0.5, 1.5))
+    
+    # Scroll back up a bit
+    await page.evaluate(f"window.scrollBy(0, -{scroll_amount // 2})")
+    await asyncio.sleep(random.uniform(0.3, 0.8))
+    
+    # Random mouse movement
+    try:
+        viewport_size = page.viewport_size
+        if viewport_size:
+            for _ in range(random.randint(2, 4)):
+                x = random.randint(100, viewport_size['width'] - 100)
+                y = random.randint(100, viewport_size['height'] - 100)
+                await page.mouse.move(x, y)
+                await asyncio.sleep(random.uniform(0.2, 0.5))
+    except Exception:
+        pass
+
+
+async def _navigate_to_homepage(page):
+    """Navigate to homepage first to establish browsing history."""
+    print("Navigating to Walmart.ca homepage first...")
+    await page.goto("https://www.walmart.ca", wait_until="domcontentloaded", timeout=30000)
+    
+    # Wait and simulate browsing
+    await asyncio.sleep(random.uniform(2, 4))
+    await _simulate_human_behavior(page)
+    
+    # Optionally hover over some elements
+    try:
+        # Try to hover over navigation elements if they exist
+        nav_selectors = ['nav', 'header', '[data-automation="header"]']
+        for selector in nav_selectors:
+            if await page.locator(selector).count() > 0:
+                await page.hover(selector)
+                await asyncio.sleep(random.uniform(0.3, 0.7))
+                break
+    except Exception:
+        pass
+    
+    await asyncio.sleep(random.uniform(1, 2))
+
+
+# Rotate between multiple realistic user agents (latest Chrome versions)
 USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.140 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.86 Safari/537.36",
 ]
 
 def _get_realistic_headers():
@@ -43,7 +109,7 @@ def _get_realistic_headers():
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "en-US,en;q=0.9",
         "Cache-Control": "max-age=0",
-        "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+        "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="131", "Google Chrome";v="131"',
         "Sec-Ch-Ua-Mobile": "?0",
         "Sec-Ch-Ua-Platform": '"Windows"',
         "Sec-Fetch-Dest": "document",
@@ -54,7 +120,16 @@ def _get_realistic_headers():
     }
 
 
-async def scrape_walmart_cole_harbour(search_term):
+async def scrape_walmart_cole_harbour(search_term, use_persistent_session=True):
+    """Scrape Walmart with anti-detection measures.
+    
+    Args:
+        search_term: Product search query
+        use_persistent_session: If True, reuse browser session/cookies
+    """
+    # Enforce rate limiting
+    await _check_rate_limit()
+    
     context = None
     browser = None
     async with async_playwright() as p:
@@ -68,21 +143,43 @@ async def scrape_walmart_cole_harbour(search_term):
                 "--disable-dev-shm-usage",
                 "--no-first-run",
                 "--no-default-browser-check",
+                "--disable-infobars",
+                "--disable-background-timer-throttling",
+                "--disable-backgrounding-occluded-windows",
+                "--disable-renderer-backgrounding",
             ]
         )
         
         # Random viewport to avoid fingerprinting
-        viewport_widths = [1366, 1920, 1440, 1024]
-        viewport_height = 768
+        viewport_widths = [1366, 1920, 1440, 1536, 1280]
+        viewport_heights = [768, 1024, 864, 720]
         selected_width = random.choice(viewport_widths)
+        selected_height = random.choice(viewport_heights)
         
-        context = await browser.new_context(
-            user_agent=selected_user_agent,
-            viewport={'width': selected_width, 'height': viewport_height},
-            device_scale_factor=1,
-            extra_http_headers=_get_realistic_headers(),
-            ignore_https_errors=True,
-        )
+        # Set up persistent session path
+        session_file = SESSION_DIR / "walmart_session.json"
+        
+        context_options = {
+            "user_agent": selected_user_agent,
+            "viewport": {'width': selected_width, 'height': selected_height},
+            "device_scale_factor": 1,
+            "extra_http_headers": _get_realistic_headers(),
+            "ignore_https_errors": True,
+            "locale": "en-CA",
+            "timezone_id": "America/Halifax",
+        }
+        
+        # Load persistent session if available
+        if use_persistent_session and session_file.exists():
+            try:
+                with open(session_file, 'r') as f:
+                    storage_state = json.load(f)
+                context_options["storage_state"] = storage_state
+                print("Loaded persistent browser session")
+            except Exception as e:
+                print(f"Could not load session: {e}")
+        
+        context = await browser.new_context(**context_options)
         
         # Add anti-detection cookies
         await context.add_cookies([
@@ -102,22 +199,9 @@ async def scrape_walmart_cole_harbour(search_term):
         
         page = await context.new_page()
         
-        # Inject stealth scripts before any navigation
-        try:
-            if stealth_async:
-                await stealth_async(page)
-        except Exception:
-            pass
-        
-        # Inject additional anti-bot scripts
-        await page.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', {
-                get: () => false,
-            });
-            Object.defineProperty(navigator, 'plugins', {
-                get: () => [1, 2, 3, 4, 5],
-            });
-        """)
+        # NOTE: Stealth patches are applied automatically by rebrowser-playwright.
+        # No need for manual navigator.webdriver overrides or stealth plugins.
+        # The patched Chromium binary handles all anti-detection automatically.
 
         def _extract_quantity(item: dict):
             """Extract package size/quantity information."""
@@ -306,20 +390,29 @@ async def scrape_walmart_cole_harbour(search_term):
 
             print(" | ".join(pieces))
 
+        # Navigate to homepage first to establish browsing context
+        try:
+            await _navigate_to_homepage(page)
+        except Exception as e:
+            print(f"Homepage navigation warning: {e}")
+            await asyncio.sleep(2)
+        
+        # Now navigate to search with referer
         url = f"https://www.walmart.ca/search?q={search_term.replace(' ', '%20')}"
         
         try:
-            print(f"Navigating to Walmart (Store #1176 - Cole Harbour)...")
+            print(f"Searching for '{search_term}' (Store #1176 - Cole Harbour)...")
             print(f"Using user agent: {selected_user_agent[:60]}...")
             
-            # Add realistic delay before navigation
-            await asyncio.sleep(random.uniform(1, 3))
+            # Add realistic delay before search
+            await asyncio.sleep(random.uniform(2, 4))
             
-            # Using 'domcontentloaded' to ensure we see the captcha early
+            # Navigate to search (referer already set from homepage)
             await page.goto(url, wait_until="domcontentloaded", timeout=45000)
             
-            # Add more realistic delays after page load
-            await asyncio.sleep(random.uniform(2, 4))
+            # Add more realistic delays and simulate browsing
+            await asyncio.sleep(random.uniform(2, 5))
+            await _simulate_human_behavior(page)
             
             # --- CAPTCHA DETECTION & WAIT ---
             for attempt in range(120):  # Increase timeout to 2 minutes
@@ -453,6 +546,11 @@ async def scrape_walmart_cole_harbour(search_term):
                     pass
 
             print(f"Successfully retrieved {len(results)} items.")
+            
+            # Simulate more browsing before leaving
+            await _simulate_human_behavior(page)
+            await asyncio.sleep(random.uniform(1, 3))
+            
             # Write debug summaries to a file for inspection
             try:
                 with open("debug_items.json", "w", encoding="utf-8") as df:
@@ -460,6 +558,18 @@ async def scrape_walmart_cole_harbour(search_term):
                 print("Wrote per-item debug summary to debug_items.json")
             except Exception as e:
                 print(f"Failed to write debug file: {e}")
+            
+            # Save session state for reuse
+            if use_persistent_session:
+                try:
+                    storage_state = await context.storage_state()
+                    session_file = SESSION_DIR / "walmart_session.json"
+                    with open(session_file, 'w') as f:
+                        json.dump(storage_state, f)
+                    print("Saved browser session for future use")
+                except Exception as e:
+                    print(f"Could not save session: {e}")
+            
             await _safe_close(context, browser)
             return results
 

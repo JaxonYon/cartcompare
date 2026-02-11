@@ -1,0 +1,538 @@
+{
+  "Orange Juice": {
+    "walmart": [
+      {
+        "name": "Great Value Orange 100% Juice Blend, 1 L",
+        "price": 1.88,
+        "unit_price": null,
+        "quantity": "1 L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 1.88,
+            "per": "1.0l",
+            "normalized_amount": 0.0019,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.19/100ml"
+      },
+      {
+        "name": "Orange Pure Breakfast Juice, 960 ML",
+        "price": 1.98,
+        "unit_price": null,
+        "quantity": "960 ML",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0021,
+            "per": "960.0ml",
+            "normalized_amount": 0.0021,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$0.21/100ml"
+      },
+      {
+        "name": "Tropicana Pure Premium Orange Juice 325ml, Tropicana Pure Premium Orange Juice 325ml",
+        "price": 2.98,
+        "unit_price": null,
+        "quantity": "325ml",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0092,
+            "per": "325.0ml",
+            "normalized_amount": 0.0092,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$0.92/100ml"
+      },
+      {
+        "name": "Orange Pure Breakfast Juice, 8 x 200 ML",
+        "price": 3.28,
+        "unit_price": null,
+        "quantity": "200 ML",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0164,
+            "per": "200.0ml",
+            "normalized_amount": 0.0164,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$1.64/100ml"
+      },
+      {
+        "name": "Minute Maid Orange Juice 295 mL Frozen Can, 295 x mL",
+        "price": 3.44,
+        "unit_price": null,
+        "quantity": "295 mL",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0117,
+            "per": "295.0ml",
+            "normalized_amount": 0.0117,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$1.17/100ml"
+      },
+      {
+        "name": "Minute Maid Orange Juice Pulp Free 295mL Frozen Can, 295 x mL",
+        "price": 3.44,
+        "unit_price": null,
+        "quantity": "295mL",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0117,
+            "per": "295.0ml",
+            "normalized_amount": 0.0117,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$1.17/100ml"
+      },
+      {
+        "name": "Dole Mandarin Oranges Fruit Juice, 4 x 107 mL",
+        "price": 3.47,
+        "unit_price": null,
+        "quantity": "107 mL",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0324,
+            "per": "107.0ml",
+            "normalized_amount": 0.0324,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$3.24/100ml"
+      },
+      {
+        "name": "Black River Juice - Pure Orange Juice from Concentrate, 300mL Glass Bottle",
+        "price": 3.48,
+        "unit_price": null,
+        "quantity": "300mL",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0116,
+            "per": "300.0ml",
+            "normalized_amount": 0.0116,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$1.16/100ml"
+      },
+      {
+        "name": "Great Value Orange 100% Juice Blend From Concentrate with Vitamin C Added, 1.54 L",
+        "price": 3.98,
+        "unit_price": null,
+        "quantity": "54 L",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0737,
+            "per": "54.0l",
+            "normalized_amount": 0.0001,
+            "normalized_per": "1l",
+            "base_unit": "l"
+          }
+        ],
+        "unit_price_display": "$0.01/100ml"
+      },
+      {
+        "name": "Great Value Orange 100% Juice Blend, 200 mL",
+        "price": 4.08,
+        "unit_price": null,
+        "quantity": "200 mL",
+        "available": true,
+        "unit_prices": [
+          {
+            "amount": 0.0204,
+            "per": "200.0ml",
+            "normalized_amount": 0.0204,
+            "normalized_per": "1ml",
+            "base_unit": "ml"
+          }
+        ],
+        "unit_price_display": "$2.04/100ml"
+      }
+    ],
+    "superstore": [
+      {
+        "name": "Orange 100% Juice Blend ",
+        "price": 1.99,
+        "unit_price": null,
+        "quantity": "1 l, $0.20/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.002,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Orange Pure Breakfast Juice",
+        "price": 1.99,
+        "unit_price": null,
+        "quantity": "960 ml, $0.21/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0021,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "100% Orange Mango Juice",
+        "price": 1.99,
+        "unit_price": null,
+        "quantity": "1 l, $0.20/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.002,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "100% Orange Juice Blend with Pulp",
+        "price": 2.5,
+        "unit_price": null,
+        "quantity": "1.75 l, $0.14/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0014000000000000002,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Pulp Free 100% Orange Juice Blend",
+        "price": 2.5,
+        "unit_price": null,
+        "quantity": "1.75 l, $0.14/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0014000000000000002,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Orange Juice Can",
+        "price": 2.99,
+        "unit_price": null,
+        "quantity": "295 ml, $1.01/100ml",
+        "available": true,
+        "unit_price_display": "$0.01/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0101,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Orange Juice Pulp Free Can",
+        "price": 2.99,
+        "unit_price": null,
+        "quantity": "295 ml, $1.01/100ml",
+        "available": true,
+        "unit_price_display": "$0.01/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0101,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Organic Mango Orange Fruit Juice Blend",
+        "price": 3.29,
+        "unit_price": null,
+        "quantity": "1 l, $0.33/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0033,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Organic Mango Orange Fruit Juice Boxes",
+        "price": 3.79,
+        "unit_price": null,
+        "quantity": "4x200.0 ml, $0.47/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.004699999999999999,
+            "per": "ml"
+          }
+        ]
+      },
+      {
+        "name": "Orange Juice with Pulp",
+        "price": 3.99,
+        "unit_price": null,
+        "quantity": "1.54 l, $0.26/100ml",
+        "available": true,
+        "unit_price_display": "$0.00/ml",
+        "unit_prices": [
+          {
+            "amount": 0.0026,
+            "per": "ml"
+          }
+        ]
+      }
+    ]
+  },
+  "Toilet Paper": {
+    "walmart": [
+      {
+        "name": "Royale 3 Ply Strong Toilet Paper, 12 Equal 24 Bathroom Tissue Rolls, 165 Toilet Paper Sheets per Roll",
+        "price": 6.47,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Great Value, Ultra Soft Toilet Paper, 12 Double equal 24 rolls, 242 tissues per roll",
+        "price": 6.94,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Royale 3 Ply Strong Toilet Paper, 12 Equal 24 Bathroom Tissue Rolls, 165 Toilet Paper Sheets per Roll",
+        "price": 6.95,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Royale Original, 2 Ply Toilet Paper, 8 Equal 16 Bathroom Tissue Rolls, 242 Toilet Paper Sheets per Roll",
+        "price": 6.97,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Royale Original, 2 Ply Toilet Paper, 12 Equal 24 Bathroom Tissue Rolls, 242 Toilet Paper Sheets per Roll",
+        "price": 7.97,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Royale Velour, 2 Ply Toilet Paper, 12 Equal 24 Bathroom Tissue Rolls, 142 Toilet Paper Sheets per Roll",
+        "price": 7.97,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Royale 3 Ply Strong Toilet Paper, 12 Equal 24 Bathroom Tissue Rolls, 165 Toilet Paper Sheets per Roll",
+        "price": 7.97,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Charmin Toilet Paper Ultra Soft, 6 Mega Rolls = 24 Regular Rolls, 2-ply Bath Tissue, 6CT",
+        "price": 8.58,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Charmin Ultra Strong Toilet Paper 6 Mega Rolls Per Roll, 6CT",
+        "price": 8.58,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      },
+      {
+        "name": "Cottonelle Ultra Comfort Toilet Paper, 6 Mega Rolls (6 Mega Rolls = 24 Regular Rolls), 244 Sheets Per Roll, Cottonelle Ultra Comfort Toilet Paper,6 Mega Rolls",
+        "price": 9.98,
+        "unit_price": null,
+        "quantity": null,
+        "available": true
+      }
+    ],
+    "superstore": [
+      {
+        "name": "Max Soft Toilet Paper, 12 Double Rolls = 24 Single Rolls",
+        "price": 9.0,
+        "unit_price": null,
+        "quantity": "12 ea, $0.75/1ea",
+        "available": true,
+        "unit_price_display": "$0.75/ea",
+        "unit_prices": [
+          {
+            "amount": 0.75,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Soft & Thick Toilet Paper, 12 Double Rolls = 24 Single Rolls",
+        "price": 11.99,
+        "unit_price": null,
+        "quantity": "12 ea, $1.00/1ea",
+        "available": true,
+        "unit_price_display": "$1.00/ea",
+        "unit_prices": [
+          {
+            "amount": 1.0,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Soft & Thick Toilet Paper, 24 Double Rolls = 48 Single Rolls",
+        "price": 12.99,
+        "unit_price": null,
+        "quantity": "1 ea, $0.54/1ea",
+        "available": true,
+        "unit_price_display": "$0.54/ea",
+        "unit_prices": [
+          {
+            "amount": 0.54,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Velour Toilet Paper, 15 Equal 30 Rolls, 142 Bathroom Tissues per roll",
+        "price": 13.99,
+        "unit_price": null,
+        "quantity": "15 ea, $0.93/1ea",
+        "available": true,
+        "unit_price_display": "$0.93/ea",
+        "unit_prices": [
+          {
+            "amount": 0.93,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Original Toilet Paper, 15 Equal 30 Rolls, 242 Bathroom Tissues per roll",
+        "price": 13.99,
+        "unit_price": null,
+        "quantity": "1 ea, $13.99/1ea",
+        "available": true,
+        "unit_price_display": "$13.99/ea",
+        "unit_prices": [
+          {
+            "amount": 13.99,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Original Toilet Paper, 16 Equal 48 Rolls, 363 Bathroom Tissues per roll",
+        "price": 14.99,
+        "unit_price": null,
+        "quantity": "16 ea, $0.94/1ea",
+        "available": true,
+        "unit_price_display": "$0.94/ea",
+        "unit_prices": [
+          {
+            "amount": 0.94,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Max Toilet Paper 24=48",
+        "price": 15.0,
+        "unit_price": null,
+        "quantity": "24 ea, $0.63/1ea",
+        "available": true,
+        "unit_price_display": "$0.63/ea",
+        "unit_prices": [
+          {
+            "amount": 0.63,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Toilet Paper Ultra Strong, 12 Mega Rolls",
+        "price": 18.99,
+        "unit_price": null,
+        "quantity": "12 ea, $1.58/1ea",
+        "available": true,
+        "unit_price_display": "$1.58/ea",
+        "unit_prices": [
+          {
+            "amount": 1.58,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Toilet Paper Ultra Soft, 12 Mega Rolls, 2-ply Bath Tissue",
+        "price": 18.99,
+        "unit_price": null,
+        "quantity": "12 ea, $1.58/1ea",
+        "available": true,
+        "unit_price_display": "$1.58/ea",
+        "unit_prices": [
+          {
+            "amount": 1.58,
+            "per": "ea"
+          }
+        ]
+      },
+      {
+        "name": "Toilet Paper Ultra Soft, 24 Mega Rolls, 2-ply Bath Tissue",
+        "price": 22.99,
+        "unit_price": null,
+        "quantity": "24 ea, $0.96/1ea",
+        "available": true,
+        "unit_price_display": "$0.96/ea",
+        "unit_prices": [
+          {
+            "amount": 0.96,
+            "per": "ea"
+          }
+        ]
+      }
+    ]
+  },
+  "Lemons": {
+    "walmart": [],
+    "superstore": []
+  }
+}
